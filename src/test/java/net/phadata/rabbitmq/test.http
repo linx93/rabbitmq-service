@@ -1,0 +1,19 @@
+POST http://192.168.1.254:4636/api/producer/send
+Content-Type: application/json
+
+{
+  "baseMqInfo":{
+    "content":"test",
+    "exchange":"test_7_1",
+    "queue":"test1",
+    "exchangeType": "fanout",
+    "routingKey":"test_7_1"
+  },
+  "dtid":"dtid",
+  "machineId":"uuid",
+  "title":"title"
+}
+
+### POST
+
+POST http://localhost:4636/api/rabbit/findAllQueue
